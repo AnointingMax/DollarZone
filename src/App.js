@@ -146,8 +146,17 @@ function App() {
 						))}
 					</div>
 					<div className="buttons">
-						<button className="button">Locate Us</button>
-						<button className="button">Call Us</button>
+						<a
+							className="button"
+							target="_blank"
+							href="https://www.google.com/maps/search/?api=1&query=7916 dorsey run road suite 6, jessup MD 20794"
+							rel="noreferrer"
+						>
+							Locate Us
+						</a>
+						<a className="button" href="tel:+1 (410) 867-5407">
+							Call Us
+						</a>
 					</div>
 					<div className="slider">
 						<Slider {...settings}>
@@ -233,7 +242,13 @@ function App() {
 			<footer className="footer full-bleed">
 				<img src={advert} alt="advert" className="advert" />
 				<div className="socialIcons">
-					<Facebook />
+					<a
+						target="_blank"
+						href="https://m.facebook.com/story.php?story_fbid=pfbid02tbLwKFJSZFBk8PDE5VBZT8NpVC4MdGaV1HPnc9X2XUFFg3QUZdpBeu9B1vHnXTHtl&id=100089023857833"
+						rel="noreferrer"
+					>
+						<Facebook />
+					</a>
 					<Twitter />
 					<Instagram />
 				</div>
