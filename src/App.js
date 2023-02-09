@@ -250,7 +250,13 @@ function App() {
 						<Facebook />
 					</a>
 					<Twitter />
-					<Instagram />
+					<a
+						href="https://www.instagram.com/dollar._.zone/"
+						target="_blank"
+						rel="noreferrer"
+					>
+						<Instagram />
+					</a>
 				</div>
 			</footer>
 		</div>
