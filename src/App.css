@@ -154,6 +154,10 @@ main {
     max-height: 330px;
 }
 
+.slider-image.contain {
+    object-fit: contain;
+}
+
 .slick-dots {
     bottom: -35px;
 }

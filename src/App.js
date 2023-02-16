@@ -14,6 +14,7 @@ import image10 from "./assets/image10.jpg";
 import image11 from "./assets/image11.jpg";
 import image12 from "./assets/image12.jpg";
 import image13 from "./assets/image13.jpg";
+import opening from "./assets/opening.png";
 import affordable from "./assets/affordable.png";
 import quality from "./assets/quality.png";
 import topService from "./assets/top-service.png";
@@ -109,6 +110,7 @@ function App() {
 		prevArrow: <SamplePrevArrow />,
 	};
 	const sliderImages = [
+		opening,
 		image1,
 		image2,
 		image3,
@@ -160,9 +162,13 @@ function App() {
 					</div>
 					<div className="slider">
 						<Slider {...settings}>
-							{sliderImages.map((image) => (
+							{sliderImages.map((image, index) => (
 								<div>
-									<img src={image} className="slider-image" alt="slider" />
+									<img
+										src={image}
+										className={`slider-image ${index === 0 && "contain"}`}
+										alt="slider"
+									/>
 								</div>
 							))}
 						</Slider>
